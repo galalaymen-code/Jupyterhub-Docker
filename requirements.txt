@@ -1,0 +1,4 @@
+jupyterhub
+jupyterlab
+notebook
+jupyterhub-nativeauthenticator
