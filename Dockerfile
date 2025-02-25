@@ -25,7 +25,7 @@ RUN apt-get clean autoclean
 RUN apt-get autoremove --yes
 RUN rm -rf /var/lib/{apt,dpkg,cache,log}/
 RUN npm install -g configurable-http-proxy --force
-RUN sudo adduser --disabled-password --gecos "Jovyan" jovyan --uid 1000
+RUN adduser --disabled-password --gecos "Jovyan" jovyan --uid 1000
 RUN python3 -m venv /opt/venv
 ENV PATH /opt/venv/bin:${PATH}
 RUN /opt/venv/bin/pip install -r requirements.txt --no-cache-dir
